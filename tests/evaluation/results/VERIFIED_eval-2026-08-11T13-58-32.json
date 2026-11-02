@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "timestamp": "2026-08-11T13:58:32.530Z",
+    "status": "VERIFIED",
+    "note": "Live Gemini API calls"
+  },
+  "metrics": {
+    "operational": {
+      "totalAttempted": 20,
+      "successful": 4,
+      "errored": 16,
+      "operationalErrorRate": 0.8,
+      "errorCodeCounts": {
+        "HTTP_500": 16
+      }
+    },
+    "modelQuality": {
+      "accuracy": 1,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "fpr": 0,
+      "fnr": 0,
+      "confusionMatrix": {
+        "TP": 1,
+        "TN": 3,
+        "FP": 0,
+        "FN": 0
+      },
+      "totalEvaluated": 4,
+      "byCategory": {
+        "conversational": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1,
+          "tp": 0,
+          "tn": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "legitimate_bank": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1,
+          "tp": 0,
+          "tn": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "legitimate_ecommerce": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1,
+          "tp": 0,
+          "tn": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "legitimate_telco": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "legitimate_app": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "safe_url": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "adversarial_benign": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "phishing": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "banking_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "job_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "delivery_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "investment_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "prize_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "impersonation": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "romance_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "account_takeover": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "adversarial_scam": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1,
+          "tp": 1,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": "safe-001",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 5354
+    },
+    {
+      "id": "safe-006",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 4356
+    },
+    {
+      "id": "safe-011",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 6904
+    },
+    {
+      "id": "safe-016",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4654,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-019",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4299,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-url-001",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4065,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-url-003",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4011,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-adv-001",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 3730,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-adv-004",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4228,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-adv-009",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4111,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-phish-001",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 3891,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-bank-001",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 4506,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-job-001",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 3846,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-delivery-001",
+      "category": "delivery_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 3793,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-invest-001",
+      "category": "investment_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 4535,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-prize-001",
+      "category": "prize_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 3659,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-imp-001",
+      "category": "impersonation",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 4007,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-romance-001",
+      "category": "romance_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 4861,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-ato-001",
+      "category": "account_takeover",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 4492,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "scam-adv-005",
+      "category": "adversarial_scam",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SCAM",
+      "riskScore": 98,
+      "classification": "BANKING_SCAM",
+      "durationMs": 10489
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "timestamp": "2026-08-11T13:51:14.326Z",
+    "status": "VERIFIED",
+    "note": "Live Gemini API calls"
+  },
+  "metrics": {
+    "accuracy": 0,
+    "precision": 0,
+    "recall": 0,
+    "f1": 0,
+    "fpr": 0,
+    "fnr": 0,
+    "confusionMatrix": {
+      "TP": 0,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0
+    },
+    "totalEvaluated": 0,
+    "errored": 20,
+    "byCategory": {
+      "conversational": {
+        "total": 0,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_bank": {
+        "total": 0,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_ecommerce": {
+        "total": 0,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_telco": {
+        "total": 0,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_app": {
+        "total": 0,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": "safe-001",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 458,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-002",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 127,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-003",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 153,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-004",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 216,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-005",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 214,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-006",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 220,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-007",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 181,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-008",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 139,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-009",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 149,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-010",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 146,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-011",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 136,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-012",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 134,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-013",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 133,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-014",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 147,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-015",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 165,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-016",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 142,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-017",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 226,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-018",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 162,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-019",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 135,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-020",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 147,
+      "errorCode": "HTTP_500"
+    }
+  ]
+}

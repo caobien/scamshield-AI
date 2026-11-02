@@ -1,0 +1,6 @@
+{
+  "name": "ScamShield AI",
+  "description": "Đánh giá rủi ro tin nhắn, ảnh chụp màn hình và URL đáng ngờ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

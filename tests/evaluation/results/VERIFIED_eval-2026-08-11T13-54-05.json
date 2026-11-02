@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "timestamp": "2026-08-11T13:54:05.669Z",
+    "status": "VERIFIED",
+    "note": "Live Gemini API calls"
+  },
+  "metrics": {
+    "accuracy": 1,
+    "precision": 0,
+    "recall": 0,
+    "f1": 0,
+    "fpr": 0,
+    "fnr": 0,
+    "confusionMatrix": {
+      "TP": 0,
+      "TN": 17,
+      "FP": 0,
+      "FN": 0
+    },
+    "totalEvaluated": 17,
+    "errored": 3,
+    "byCategory": {
+      "conversational": {
+        "total": 5,
+        "correct": 5,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_bank": {
+        "total": 4,
+        "correct": 4,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_ecommerce": {
+        "total": 4,
+        "correct": 4,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_telco": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_app": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 2,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": "safe-001",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 3899
+    },
+    {
+      "id": "safe-002",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 4413
+    },
+    {
+      "id": "safe-003",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 3675
+    },
+    {
+      "id": "safe-004",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 4648
+    },
+    {
+      "id": "safe-005",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 3803
+    },
+    {
+      "id": "safe-006",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 3840,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-007",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 7583
+    },
+    {
+      "id": "safe-008",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 5238
+    },
+    {
+      "id": "safe-009",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 3565
+    },
+    {
+      "id": "safe-010",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 5209
+    },
+    {
+      "id": "safe-011",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 4645
+    },
+    {
+      "id": "safe-012",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 3587
+    },
+    {
+      "id": "safe-013",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 11168
+    },
+    {
+      "id": "safe-014",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 5569
+    },
+    {
+      "id": "safe-015",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4402,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-016",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4586,
+      "errorCode": "HTTP_500"
+    },
+    {
+      "id": "safe-017",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 7921
+    },
+    {
+      "id": "safe-018",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 4780
+    },
+    {
+      "id": "safe-019",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 5411
+    },
+    {
+      "id": "safe-020",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 4600
+    }
+  ]
+}

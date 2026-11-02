@@ -1,0 +1,31 @@
+{
+  "batchNum": 2,
+  "runMetadata": {
+    "datasetFingerprint": "n=173:safe-001:scam-url-012:7444d50f8b3e575f",
+    "model": "gemini-3.5-flash",
+    "delayMs": 6000,
+    "startedAt": "2026-08-12T13:26:17.235Z"
+  },
+  "nextIndex": 2,
+  "results": [
+    {
+      "sampleId": "safe-043",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4476,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "sampleId": "safe-044",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 5079,
+      "errorCode": "RATE_LIMITED"
+    }
+  ],
+  "lastUpdatedAt": "2026-08-13T03:48:09.946Z"
+}

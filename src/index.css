@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SCAMSHIELD AI — DESIGN SYSTEM TOKENS & FOUNDATIONS
+   Theme: Precision Security Intelligence Platform
+   Visual Language: Security, Trust, Intelligence, Clarity, Precision, Calmness
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── 1. Color Palette: Backgrounds & Surfaces ─────────────────────────── */
+  --color-bg-app: #f8fafc;            /* slate-50 */
+  --color-surface: #ffffff;           /* pure white */
+  --color-surface-elevated: #ffffff;  /* elevated card surface */
+  --color-surface-subtle: #f1f5f9;    /* slate-100 */
+  --color-surface-hover: #e2e8f0;     /* slate-200 */
+  --color-surface-overlay: rgba(15, 23, 42, 0.6); /* slate-900 with opacity */
+
+  /* ── 2. Color Palette: Typography ─────────────────────────────────────── */
+  --color-text-primary: #0f172a;      /* slate-900 */
+  --color-text-secondary: #334155;    /* slate-700 */
+  --color-text-muted: #64748b;        /* slate-500 */
+  --color-text-disabled: #94a3b8;     /* slate-400 */
+  --color-text-inverse: #ffffff;      /* white */
+  --color-text-brand: #4338ca;        /* indigo-700 */
+
+  /* ── 3. Color Palette: Borders ─────────────────────────────────────────── */
+  --color-border-subtle: #f1f5f9;     /* slate-100 */
+  --color-border-default: #e2e8f0;    /* slate-200 */
+  --color-border-strong: #cbd5e1;     /* slate-300 */
+  --color-border-focus: #6366f1;      /* indigo-500 */
+
+  /* ── 4. Brand & Accent Colors ─────────────────────────────────────────── */
+  --color-brand-primary: #4f46e5;     /* indigo-600 */
+  --color-brand-hover: #4338ca;       /* indigo-700 */
+  --color-brand-light: #eef2ff;       /* indigo-50 */
+  --color-brand-border: #c7d2fe;      /* indigo-200 */
+  --color-accent-amber: #f59e0b;      /* amber-500 */
+  --color-accent-blue: #3b82f6;       /* blue-500 */
+
+  /* ── 5. Semantic Status & Risk Level Colors ───────────────────────────── */
+  /* SAFE / LOW RISK */
+  --color-risk-low-bg: #ecfdf5;       /* emerald-50 */
+  --color-risk-low-text: #047857;     /* emerald-700 */
+  --color-risk-low-border: #a7f3d0;   /* emerald-200 */
+  --color-risk-low-badge: #d1fae5;    /* emerald-100 */
+  --color-risk-low-icon: #059669;     /* emerald-600 */
+
+  /* MEDIUM RISK */
+  --color-risk-medium-bg: #fffbe6;    /* amber-50 */
+  --color-risk-medium-text: #b45309;  /* amber-700 */
+  --color-risk-medium-border: #fde68a;/* amber-200 */
+  --color-risk-medium-badge: #fef3c7; /* amber-100 */
+  --color-risk-medium-icon: #d97706;  /* amber-600 */
+
+  /* HIGH RISK */
+  --color-risk-high-bg: #fff7ed;      /* orange-50 */
+  --color-risk-high-text: #c2410c;    /* orange-700 */
+  --color-risk-high-border: #fed7aa;  /* orange-200 */
+  --color-risk-high-badge: #ffedd5;   /* orange-100 */
+  --color-risk-high-icon: #ea580c;    /* orange-600 */
+
+  /* CRITICAL RISK */
+  --color-risk-critical-bg: #fff1f2;  /* rose-50 */
+  --color-risk-critical-text: #be123c;/* rose-700 */
+  --color-risk-critical-border: #fecdd3;/* rose-200 */
+  --color-risk-critical-badge: #ffe4e6;/* rose-100 */
+  --color-risk-critical-icon: #e11d48;/* rose-600 */
+
+  /* UNKNOWN (Neutral Grey - NEVER looks like SAFE) */
+  --color-risk-unknown-bg: #f8fafc;   /* slate-50 */
+  --color-risk-unknown-text: #475569; /* slate-600 */
+  --color-risk-unknown-border: #cbd5e1;/* slate-300 */
+  --color-risk-unknown-badge: #e2e8f0;/* slate-200 */
+  --color-risk-unknown-icon: #64748b;  /* slate-500 */
+
+  /* ── 6. Spacing Scale ─────────────────────────────────────────────────── */
+  --space-0-5: 0.125rem; /* 2px */
+  --space-1: 0.25rem;    /* 4px */
+  --space-1-5: 0.375rem; /* 6px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-2-5: 0.625rem; /* 10px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-3-5: 0.875rem; /* 14px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+
+  /* ── 7. Border Radius Scale ───────────────────────────────────────────── */
+  --radius-xs: 0.25rem;  /* 4px */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-2xl: 1.5rem;  /* 24px */
+  --radius-full: 9999px; /* Pill */
+
+  /* ── 8. Elevation & Shadows ────────────────────────────────────────────── */
+  --shadow-2xs: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-xs: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 15px -3px rgba(15, 23, 42, 0.07), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-glow-brand: 0 0 20px -3px rgba(79, 70, 229, 0.3);
+  --shadow-glow-rose: 0 0 20px -3px rgba(225, 29, 72, 0.3);
+
+  /* ── 9. Motion & Transitions ───────────────────────────────────────────── */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── 10. Typography System ────────────────────────────────────────────── */
+  --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BASE STYLES & ACCESSIBILITY RESETS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for sleek modern SaaS feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-app);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Accessible focus ring style */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Glassmorphism Surface Utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border-default);
+}
+
+/* Standardized Security Card Surface */
+.card-surface {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.card-surface-interactive:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   PREFERS-REDUCED-MOTION SUPPORT
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "runMetadata": {
+    "datasetFingerprint": "n=173:safe-001:scam-url-012:7444d50f8b3e575f",
+    "model": "gemini-3.5-flash",
+    "delayMs": 6000,
+    "startedAt": "2026-08-12T13:26:17.235Z"
+  },
+  "batchResults": {
+    "1": null,
+    "2": null,
+    "3": null
+  }
+}

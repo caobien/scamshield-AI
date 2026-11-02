@@ -1,0 +1,1912 @@
+{
+  "meta": {
+    "timestamp": "2026-08-11T13:23:38.383Z",
+    "status": "UNVERIFIED",
+    "unverifiedReason": "DRY_RUN=true — no API calls made",
+    "dryRun": true,
+    "apiBase": "http://localhost:3000"
+  },
+  "metrics": {
+    "accuracy": 0.6069364161849711,
+    "precision": 0,
+    "recall": 0,
+    "f1": 0,
+    "fpr": 0,
+    "fnr": 1,
+    "confusion": {
+      "TP": 0,
+      "TN": 105,
+      "FP": 0,
+      "FN": 68
+    },
+    "totalEvaluated": 173,
+    "errored": 0,
+    "byCategory": {
+      "conversational": {
+        "total": 26,
+        "correct": 26,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 26,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_bank": {
+        "total": 14,
+        "correct": 14,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 14,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_ecommerce": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 12,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_telco": {
+        "total": 7,
+        "correct": 7,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "legitimate_app": {
+        "total": 7,
+        "correct": 7,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 7,
+        "fp": 0,
+        "fn": 0
+      },
+      "safe_url": {
+        "total": 20,
+        "correct": 20,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "adversarial_benign": {
+        "total": 19,
+        "correct": 19,
+        "accuracy": 1,
+        "tp": 0,
+        "tn": 19,
+        "fp": 0,
+        "fn": 0
+      },
+      "phishing": {
+        "total": 24,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 24
+      },
+      "banking_scam": {
+        "total": 5,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 5
+      },
+      "job_scam": {
+        "total": 6,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 6
+      },
+      "delivery_scam": {
+        "total": 4,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 4
+      },
+      "investment_scam": {
+        "total": 5,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 5
+      },
+      "prize_scam": {
+        "total": 5,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 5
+      },
+      "impersonation": {
+        "total": 6,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 6
+      },
+      "adversarial_scam": {
+        "total": 7,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 7
+      },
+      "romance_scam": {
+        "total": 3,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "account_takeover": {
+        "total": 3,
+        "correct": 0,
+        "accuracy": 0,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 3
+      }
+    }
+  },
+  "samples": [
+    {
+      "sampleId": "safe-001",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-002",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-003",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-004",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-005",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-006",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-007",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-008",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-009",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-010",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-011",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-012",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-013",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-014",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-015",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-016",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-017",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-018",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-019",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-020",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-021",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-001",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-002",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-003",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-004",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-005",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-006",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-007",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-008",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-001",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-002",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-003",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-004",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-005",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-006",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-007",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-008",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-009",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-adv-010",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-022",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-023",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-024",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-025",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-026",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-027",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-028",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-029",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-030",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-031",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-032",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-033",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-034",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-035",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-036",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-037",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-038",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-039",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-040",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-041",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-042",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-043",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-044",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-045",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-046",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-047",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-048",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-049",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-050",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-009",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-010",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-011",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-012",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-013",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-014",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-015",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-051",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-052",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-053",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-054",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-055",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-056",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-057",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-058",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-059",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-060",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-061",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-062",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-063",
+      "category": "legitimate_telco",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-064",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-065",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-016",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-017",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-018",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-019",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-url-020",
+      "category": "safe_url",
+      "sourceType": "URL",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-066",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-067",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-068",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-069",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-070",
+      "category": "legitimate_ecommerce",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-071",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-072",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-073",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-074",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "safe-075",
+      "category": "legitimate_app",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-001",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-002",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-003",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-004",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-005",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-006",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-007",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-008",
+      "category": "phishing",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-009",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-010",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-011",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-phish-012",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-bank-001",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-bank-002",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-bank-003",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-bank-004",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-bank-005",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-job-001",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-job-002",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-job-003",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-job-004",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-job-005",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-job-006",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-delivery-001",
+      "category": "delivery_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-delivery-002",
+      "category": "delivery_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-delivery-003",
+      "category": "delivery_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-delivery-004",
+      "category": "delivery_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-invest-001",
+      "category": "investment_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-invest-002",
+      "category": "investment_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-invest-003",
+      "category": "investment_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-invest-004",
+      "category": "investment_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-invest-005",
+      "category": "investment_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-prize-001",
+      "category": "prize_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-prize-002",
+      "category": "prize_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-prize-003",
+      "category": "prize_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-prize-004",
+      "category": "prize_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-prize-005",
+      "category": "prize_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-imp-001",
+      "category": "impersonation",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-imp-002",
+      "category": "impersonation",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-imp-003",
+      "category": "impersonation",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-imp-004",
+      "category": "impersonation",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-imp-005",
+      "category": "impersonation",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-imp-006",
+      "category": "impersonation",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-adv-001",
+      "category": "adversarial_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-adv-002",
+      "category": "adversarial_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-adv-003",
+      "category": "adversarial_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-adv-004",
+      "category": "adversarial_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-adv-005",
+      "category": "adversarial_scam",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-adv-006",
+      "category": "adversarial_scam",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-adv-007",
+      "category": "adversarial_scam",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-romance-001",
+      "category": "romance_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-romance-002",
+      "category": "romance_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-romance-003",
+      "category": "romance_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-ato-001",
+      "category": "account_takeover",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-ato-002",
+      "category": "account_takeover",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-ato-003",
+      "category": "account_takeover",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-001",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-002",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-003",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-004",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-005",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-006",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-007",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-008",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-009",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-010",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-011",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    },
+    {
+      "sampleId": "scam-url-012",
+      "category": "phishing",
+      "sourceType": "URL",
+      "groundTruth": "SCAM",
+      "predicted": "SAFE",
+      "riskScore": 10,
+      "classification": "SAFE",
+      "durationMs": 10
+    }
+  ]
+}

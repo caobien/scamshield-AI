@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "timestamp": "2026-08-13T02:45:51.801Z",
+    "status": "INCOMPLETE",
+    "baselineGate": "INCOMPLETE",
+    "model": "gemini-3.5-flash",
+    "datasetFingerprint": "n=173:safe-001:scam-url-012:7444d50f8b3e575f",
+    "totalDatasetSamples": 173,
+    "batchFiles": [
+      "D:\\GOOGLE AI RISE\\scamshield-ai\\tests\\evaluation\\results\\batch-1-2026-08-13T02-35-12.json",
+      "D:\\GOOGLE AI RISE\\scamshield-ai\\tests\\evaluation\\results\\batch-2-2026-08-13T02-40-32.json",
+      "D:\\GOOGLE AI RISE\\scamshield-ai\\tests\\evaluation\\results\\batch-3-2026-08-13T02-45-51.json"
+    ],
+    "gateNote": "Only 11/173 attempted."
+  },
+  "baseline": {
+    "file": "VERIFIED_eval-2026-08-12T13-04-00.json",
+    "sampleCount": 20,
+    "limitationNote": "⚠️  Baseline is a 20-sample smoke test — NOT a full-dataset run.\n   Binomial 95% CI ≈ ±44pp. Delta values are\n   DIRECTIONAL INDICATORS only. NOT statistical proof of performance.",
+    "metrics": {
+      "accuracy": 1,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "fpr": 0,
+      "fnr": 0
+    }
+  },
+  "metrics": {
+    "operational": {
+      "totalAttempted": 11,
+      "successful": 2,
+      "errored": 9,
+      "operationalErrorRate": 0.8181818181818182,
+      "operationalCoverage": 0.18181818181818182,
+      "errorCodeCounts": {
+        "RATE_LIMITED": 9
+      },
+      "coverageNote": "9 sample(s) returned ERROR; excluded from quality metrics."
+    },
+    "modelQuality": {
+      "note": "Computed on 2 successful responses only.",
+      "totalEvaluated": 2,
+      "accuracy": 1,
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "fpr": 0,
+      "fnr": 0,
+      "confusionMatrix": {
+        "TP": 0,
+        "TN": 2,
+        "FP": 0,
+        "FN": 0
+      },
+      "byCategory": {
+        "adversarial_benign": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "banking_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "conversational": {
+          "total": 2,
+          "correct": 2,
+          "accuracy": 1,
+          "tp": 0,
+          "tn": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "job_scam": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "legitimate_bank": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": 0,
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": "safe-001",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 0,
+      "classification": "SAFE",
+      "durationMs": 17953
+    },
+    {
+      "id": "safe-002",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "SAFE",
+      "riskScore": 5,
+      "classification": "SAFE",
+      "durationMs": 24979
+    },
+    {
+      "id": "safe-003",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4067,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "safe-004",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 3985,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "safe-005",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 3996,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "safe-043",
+      "category": "legitimate_bank",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 3763,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "safe-044",
+      "category": "adversarial_benign",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4228,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "safe-045",
+      "category": "conversational",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SAFE",
+      "predicted": "ERROR",
+      "durationMs": 4190,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "scam-bank-004",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 4751,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "scam-bank-005",
+      "category": "banking_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 4271,
+      "errorCode": "RATE_LIMITED"
+    },
+    {
+      "id": "scam-job-001",
+      "category": "job_scam",
+      "sourceType": "MESSAGE",
+      "groundTruth": "SCAM",
+      "predicted": "ERROR",
+      "durationMs": 3464,
+      "errorCode": "RATE_LIMITED"
+    }
+  ]
+}
